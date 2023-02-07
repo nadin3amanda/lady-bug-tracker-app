@@ -36,14 +36,17 @@ function App() {
 
   return (
     <div className="app">
-     <h1> Lady Bug Tracker </h1>
-     <BugListTable bugs={bugList} onDeleteBug={(id: string) =>  deleteBug(id)} />
+      <header>
+      <img src={require('./images/lady-bug-pixelized.png')} className="lady-bug-icon" alt='lady-bug-pixelized' />
+      <h1> Lady Bug Tracker </h1>
+      </header>
+     <h3>Never allow the same bug bite you twice!</h3>
      <form className="add-new-bug-form" onSubmit={addBug}>
-      <label htmlFor='newBugDescription'>
+        <label htmlFor='newBugDescription'>
         New Bug Description:
         <input type="text" id="newBugDescription" onChange={event => setNewBugDescription(event.target.value)} value={newBugDescription}></input>
       </label>
-      <label htmlFor='newBugPriority'>
+      <label htmlFor='newBugPriority' id="newBugPriorityTitle" >
         New Bug Priority:
        <select id="newBugPriority" value={newBugPriority} onChange={event => setNewBugPriority(event.target.value)}>
         <option value="Low">Low</option>
@@ -53,6 +56,7 @@ function App() {
        <button type="submit">Add New Bug</button>
       </label>
      </form>
+     <BugListTable bugs={bugList} onDeleteBug={(id: string) =>  deleteBug(id)} />
     </div>
   );
 }
