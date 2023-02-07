@@ -35,10 +35,10 @@ function App() {
   };
 
   return (
-    <div className="App">
+    <div className="app">
      <h1> Lady Bug Tracker </h1>
      <BugListTable bugs={bugList} onDeleteBug={(id: string) =>  deleteBug(id)} />
-     <form onSubmit={addBug}>
+     <form className="add-new-bug-form" onSubmit={addBug}>
       <label htmlFor='newBugDescription'>
         New Bug Description:
         <input type="text" id="newBugDescription" onChange={event => setNewBugDescription(event.target.value)} value={newBugDescription}></input>
