@@ -3,6 +3,7 @@ import React, { FormEvent, useState } from 'react';
 import './App.css';
 import { Bug, BugPriority } from './Bug';
 import {v4 as uuid} from 'uuid';
+import BugListTable from './BugListTable';
 
 
 
@@ -36,6 +37,7 @@ function App() {
   return (
     <div className="App">
      <h1> Lady Bug Tracker </h1>
+     <BugListTable bugs={bugList} onDeleteBug={(id: string) =>  deleteBug(id)} />
      <form onSubmit={addBug}>
       <label htmlFor='newBugDescription'>
         New Bug Description:
