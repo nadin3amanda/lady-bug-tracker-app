@@ -123,7 +123,6 @@ code {
   font-size:13px;
   color:cadetblue;
   margin-bottom:0;
-
 }
 
 .footer-basic .copyright > a:hover {
@@ -131,8 +130,6 @@ code {
   color: hotpink;
   font-style: italic;
   font-weight: 400;
-
-
 }
 
 button {
@@ -145,4 +142,24 @@ button {
   display: block;
   margin: 6px auto;
   cursor: pointer;
+}
+
+@media only screen and (max-device-width: 480px) {
+  .footer-basic {
+    display: block;
+    width: 100vw;
+    margin: 0rem 10rem -35rem 10rem;
+    text-align: center !important;
+  }
+
+  .footer-basic .social > a {
+    width: 60px;
+    height: 60px;
+    font-size: 50px;
+    vertical-align: middle;
+  }
+
+  .footer-basic .copyright  {
+    font-size: 18px;
+  }
 }

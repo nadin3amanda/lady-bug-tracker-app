@@ -107,7 +107,7 @@ table {
   backdrop-filter: blur(5rem);
 }
 
-table td, table th {
+ {
   text-align: left;
   padding: 10px;
 }
@@ -116,4 +116,37 @@ table th {
   background-color: azure;
   border-top-left-radius: 8px;
   border-top-right-radius: 8px;
+}
+
+@media only screen and (max-device-width: 480px) {
+  header {
+    align-items: center;
+    justify-content: center;
+    margin-top: 50px;
+  }
+  h1 {
+    font-size: 24px;
+  }
+  h3 {
+    width: 100%;
+    display: flex;
+    margin: 0px 10px 20px 60px;
+  }
+
+  table {
+    margin-left: 50px;
+    align-self: center;
+    justify-content: center;
+  }
+
+  td {
+    margin-left: 5px;
+  }
+
+
+  .add-new-bug-form {
+    margin-left: 50px;
+    align-self: center;
+    justify-content: center;
+  }
 }
