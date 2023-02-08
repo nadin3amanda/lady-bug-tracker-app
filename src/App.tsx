@@ -46,7 +46,7 @@ function App() {
         New Bug Description:
         <textarea id="newBugDescription" onChange={event => setNewBugDescription(event.target.value)} value={newBugDescription} name="Explain your bug..."></textarea>
       </label>
-      <label htmlFor='newBugPriority' id="newBugPriorityTitle" >
+      <label htmlFor='newBugPriority' className="newBugPriorityTitle" >
         New Bug Priority:
        <select id="newBugPriority" value={newBugPriority} onChange={event => setNewBugPriority(event.target.value)}>
         <option value="Low">Low</option>

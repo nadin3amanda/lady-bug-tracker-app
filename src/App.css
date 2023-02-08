@@ -62,16 +62,15 @@ h3 {
 
 #newBugDescription {
   width: 400px;
-  height: 300px;
+  height: auto;
   border-radius: 8px;
   border: none;
   display: block;
   margin: 8px auto;
   font-weight: 400;
-
 }
 
-#newBugPriorityTitle {
+.newBugPriorityTitle {
   display: block;
   margin: 8px auto;
   text-align: center;
@@ -91,8 +90,10 @@ h3 {
   text-transform:uppercase;
   display: block;
   margin: 6px auto;
+  cursor: pointer;
 
 }
+
 
 table {
   margin-top: 20px;
