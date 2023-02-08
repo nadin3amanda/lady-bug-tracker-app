@@ -1,10 +1,7 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,400;1,300&display=swap');
+
 body {
-  /* margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale; */
   margin: auto;
   font-family: -apple-system, BlinkMacSystemFont, sans-serif;
   overflow: auto;
@@ -81,11 +78,12 @@ code {
 
 .footer-basic {
   padding:40px 0;
-  color:#4b4c4d;
+  color:rgba(48,238,226,1) ;
   position: absolute;
   bottom: 0;
   width: 100%;
-  height: 2.5rem; 
+  height: 2.5rem;
+  font-family: 'Rubik', sans-serif;
 }
 
 .footer-basic li {
@@ -109,7 +107,7 @@ code {
   display:inline-block;
   text-align:center;
   border-radius:50%;
-  border:1px solid #ccc;
+  border:1px solid  rgba(48,238,226,1) ;
   margin:0 8px;
   color:inherit;
   opacity:0.75;
@@ -120,11 +118,20 @@ code {
 }
 
 .footer-basic .copyright {
-  margin-top:2px;
+  margin-top:-20px;
   text-align:center;
   font-size:13px;
-  color:#aaa;
+  color:cadetblue;
   margin-bottom:0;
+
+}
+
+.footer-basic .copyright > a:hover {
+  font-size:15px;
+  color: hotpink;
+  font-style: italic;
+  font-weight: 400;
+
 
 }
 
