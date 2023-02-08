@@ -44,7 +44,7 @@ function App() {
      <form className="add-new-bug-form" onSubmit={addBug}>
         <label htmlFor='newBugDescription'>
         New Bug Description:
-        <input type="text" id="newBugDescription" onChange={event => setNewBugDescription(event.target.value)} value={newBugDescription}></input>
+        <textarea id="newBugDescription" onChange={event => setNewBugDescription(event.target.value)} value={newBugDescription} name="Explain your bug..."></textarea>
       </label>
       <label htmlFor='newBugPriority' id="newBugPriorityTitle" >
         New Bug Priority:
