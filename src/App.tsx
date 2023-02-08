@@ -44,7 +44,7 @@ function App() {
      <form className="add-new-bug-form" onSubmit={addBug}>
         <label htmlFor='newBugDescription'>
         New Bug Description:
-        <textarea id="newBugDescription" onChange={event => setNewBugDescription(event.target.value)} value={newBugDescription} name="Explain your bug..."></textarea>
+        <textarea id="newBugDescription" onChange={event => setNewBugDescription(event.target.value)} value={newBugDescription} name="Explain your bug..." data-test-id="newBugDescription"></textarea>
       </label>
       <label htmlFor='newBugPriority' className="newBugPriorityTitle" >
         New Bug Priority:
@@ -53,7 +53,7 @@ function App() {
         <option value="Medium">Medium</option>
         <option value="High">High</option>
        </select>
-       <button type="submit">Add New Bug</button>
+       <button type="submit" data-test-id="add-button" >Add New Bug</button>
       </label>
      </form>
      <BugListTable bugs={bugList} onDeleteBug={(id: string) =>  deleteBug(id)} />
