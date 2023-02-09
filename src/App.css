@@ -109,7 +109,11 @@ table {
 
  {
   text-align: left;
-  padding: 10px;
+  padding: 5px;
+}
+
+table tr {
+  text-align: start;
 }
 
 table th {
